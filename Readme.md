@@ -4,5 +4,5 @@ How to bootstrap a vagrant env:
 vagrant up
 vagrant ssh
 sudo su -
-/vargrant/bootstrap.sh
+/vagrant/bootstrap.sh
 ```
