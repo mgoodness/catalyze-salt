@@ -2,6 +2,7 @@ nginx-package:
   pkg.installed:
     - name: nginx
 
+{% if pillar['enable_proxy'] == True %}
 nginx-service:
   service.running:
     - name: nginx
@@ -20,3 +21,4 @@ nginx-config:
     - template: jinja
     - require:
       - pkg: nginx-package
+{% endif %}
