@@ -37,4 +37,4 @@ app_reload_supervisor:
     - name: /usr/bin/supervisorctl reload
     - watch:
       - file: app_supervisor_config
-
+      - file: app_script
